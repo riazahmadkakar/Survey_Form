@@ -9,7 +9,153 @@
   </head>
 
   <body>
-    <H1>Survey form</H1>
+    <h1 id="title" class="text-center">Survey Form</h1>
+    <p id="description" class="text-center"> The plate form help us improve the platform</p>
+    <form id="survey-form" class="border m-3">
+      <div class="mb-3 p-3 ">
+            <label for="name-label" class="col-form-label">Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control form-control-sm" id="name" placeholder="Enter your name" required>
+            </div>
+            <label for="email-label" class="col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control form-control-sm" id="email" placeholder="Example@gmail.com" required>
+            </div>
+              <label for="number-label" class="col-form-label">Age(optional)</label>
+              <div class="col-sm-10">
+              <input type="number" class="form-control form-control-sm" id="number" min=0 max=5  placeholder="Enter 0-5" required>
+            </div>
+      </div>
+      <div class="mb-2">
+        <h2>Which option best describe your current role?</h2>
+        <select id="dropdown" class="form-select">
+          <option selected>Software developer</option>
+          <option value="Engineering">Engineering</option>
+          <option value="computer science">computer science</option>
+          <option value="Mechanical Engineering">Mechanical Engineering</option>
+        </select>
+      </div>
+      
+      <h2>Would you recommend freeCodeCamp to a friend?</h2>
+
+      <div class="form-check">
+          <div>
+            <input class="form-check-input" type="radio" value="" id="flexCheckDefault" name="radioBtn" value="Definitely">
+            <label class="form-check-label" for="flexCheckDefault">
+              Definitely
+            </label>
+          </div>
+        
+        <div>
+          <input class="form-check-input" type="radio" value="" id="flexCheckDefault" name="radioBtn" value="Maybe">
+          <label class="form-check-label" for="flexCheckChecked">
+            Maybe
+          </label>
+        </div>
+        
+        
+          <div>
+            <input class="form-check-input" type="radio" value="" id="flexCheckDefault" name="radioBtn" value="Not sure">
+            <label class="form-check-label" for="flexCheckChecked">
+              Not sure
+            </label>
+          </div>
+        
+       
+      </div>
+
+      <div class="mb-2">
+        <h2>What is your favorites features of freeCodeCamp?</h2>
+        <select id="dropdown" class="form-select">
+          <option selected>Select an option </option>
+          <option value=1>one</option>
+          <option value=2>Two</option>
+          <option value=3>Three</option>
+        </select>
+      </div>
+<div class="mb-2">
+  <h2>What would you like to see improved ?(check that all applied)</h2>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value=" Front-end project" id="flexCheckDefault" checked>
+        <label class="form-check-label" for="flexCheckDefault">
+          Front-end project
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value=" Back-end project" id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          Back-end project
+        </label>
+      </div>
+      
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="Data-Visualization" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Data-Visualization
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="Challenges" id="flexCheckChecked">
+        <label class="form-check-label" for="flexCheckChecked">
+          Challenges
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="open source community" id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          open source community
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="Gitter help rooms" id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          Gitter help rooms
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value=" Videos" id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          Videos
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="City Meetups" id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          City Meetups
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value=" Wiki " id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          Wiki 
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="Forum" id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          Forum
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="Additional Courses" id="flexCheckChecked" >
+        <label class="form-check-label" for="flexCheckChecked">
+          Additional Courses
+        </label>
+      </div>
+</div>
+
+<caption>Any comments or Suggestions</caption>
+<div class="form-floating mb-3">
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+  <label for="floatingTextarea">Comments</label>
+</div>
+
+<div class="d-grid gap-2">
+  <button id="submit" class="btn btn-success" type="Submit">Submit</button>
+  
+</div>
+      
+    </form>
     
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
